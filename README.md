@@ -1,6 +1,6 @@
 # my-claude-skills
 
-A collection of [Claude Code](https://claude.com/claude-code) skills for everyday engineering workflows: diff review, context management, repository onboarding, session handoffs, targeted validation, and README generation.
+A collection of [Claude Code](https://claude.com/claude-code) skills for everyday engineering workflows: diff review, context management, repository onboarding, session handoffs, targeted validation, migration loops, and README generation.
 
 ## Install
 
@@ -16,11 +16,14 @@ Claude Code picks up skills automatically from that location — no restart or r
 
 | Skill | Use it when |
 |---|---|
+| [`adversarial-review-loop`](adversarial-review-loop) | Generated code, migrations, or large mechanical patches need independent implementer, reviewer, and fixer roles with an objective acceptance gate. |
 | [`concise-diff-review`](concise-diff-review) | Reviewing the current Git diff for blocking correctness, security, compatibility, performance, and test issues before commit or handoff. |
 | [`context-budget`](context-budget) | Long Claude Code sessions are accumulating stale context — after major phases, repeated tool output, or before compaction/a fresh session. |
 | [`context-router`](context-router) | Starting broad, ambiguous, unfamiliar, or cross-cutting work and you want the smallest sufficient set of files, skills, and checks before implementing. |
 | [`create-readme`](create-readme) | Generating a README.md for a project. |
+| [`failure-work-queue`](failure-work-queue) | Compiler errors, failing tests, crashes, or unfinished files can become a deterministic and resumable queue for a large repair effort. |
 | [`repository-summary`](repository-summary) | Entering an unfamiliar repository, or an existing repo summary has gone stale. |
+| [`migration-rulebook`](migration-rulebook) | Preparing and stress-testing the rules, semantic gaps, dependency map, and parity judge for a large language or framework migration. |
 | [`session-handoff`](session-handoff) | Wrapping up a work phase and handing continuation off to a fresh session or another agent. |
 | [`targeted-validation`](targeted-validation) | Picking the narrowest reliable validation commands after implementation, before reaching for an expensive full suite. |
 | [`gpt-image-2`](gpt-image-2) | Generating images with GPT Image 2 through an existing ChatGPT Plus/Pro subscription via the local Codex CLI. Third-party skill, MIT-licensed — see its `SKILL.md` for original source and attribution. |
